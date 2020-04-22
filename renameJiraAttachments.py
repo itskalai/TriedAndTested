@@ -1,7 +1,5 @@
 #Rename the Jira Attachments from the ID names to the actual file names so it can be imported in another instance
 import os
-filenames = {}
-absfilenames = {}
 #top is the root of the attachments folder
 top="/Users/kalaivani_ramasamy/importAttachments"
 #list.txt contains the output of the query :
