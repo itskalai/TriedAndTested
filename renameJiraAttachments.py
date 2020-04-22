@@ -12,5 +12,5 @@ with open("list.txt") as fh:
             id, file, ignore = line.split("|",2)
             for root, dirs, files in os.walk(top, topdown=False):
                 for name in files:
-                    if name in file.strip():
-                        os.rename(os.path.join(root,name),os.path.join(root,id.strip()))
+                    if name in id.strip():
+                        os.rename(os.path.join(root,name),os.path.join(root,file.strip()))
